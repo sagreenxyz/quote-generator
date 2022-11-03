@@ -12,8 +12,9 @@ function getRandomElement(arry) {
 
 function newQuote() {
     randApiQuote = getRandomElement(apiQuotes)
-    randLocalQuote = getRandomElement(localQuotes)
-    const quote = randApiQuote || randLocalQuote
+    // randLocalQuote = getRandomElement(localQuotes)
+    // const quote = randApiQuote || randLocalQuote
+    const quote = randApiQuote
     authorText.textContent = quote.author || 'Unknown'
     
     // Special format for long-length quote texts
